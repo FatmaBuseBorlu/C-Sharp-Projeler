@@ -51,6 +51,8 @@ namespace Uçak_Bilet_Rezervazyon
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -59,6 +61,8 @@ namespace Uçak_Bilet_Rezervazyon
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.maskedTextBox1);
             this.groupBox1.Controls.Add(this.label4);
@@ -72,7 +76,7 @@ namespace Uçak_Bilet_Rezervazyon
             this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.groupBox1.Size = new System.Drawing.Size(376, 285);
+            this.groupBox1.Size = new System.Drawing.Size(395, 285);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Uçuş Bilgileri";
@@ -86,7 +90,7 @@ namespace Uçak_Bilet_Rezervazyon
             this.groupBox2.Controls.Add(this.maskedTextBox2);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(389, 106);
+            this.groupBox2.Location = new System.Drawing.Point(402, 106);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(380, 285);
             this.groupBox2.TabIndex = 1;
@@ -114,6 +118,38 @@ namespace Uçak_Bilet_Rezervazyon
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Adana",
+            "Adıyaman",
+            "Afyonkarahisar",
+            "Ağrı",
+            "Amasya",
+            "Ankara",
+            "Antalya",
+            "Balıkesir",
+            "Bayburt",
+            "Bursa",
+            "İzmir",
+            "İstanbul",
+            "Kocaeli",
+            "Van",
+            "Rize",
+            "Muş",
+            "Gaziantep",
+            "Hatay",
+            "Kahramanmaraş",
+            "Şanlıurfa",
+            "Adana",
+            "Konya",
+            "Malatya",
+            "Trabzon",
+            "Zonguldak",
+            "Isparta",
+            "Kütayha",
+            "Muğla",
+            "Denizli",
+            "Uşak",
+            "Çanakkale"});
             this.comboBox1.Location = new System.Drawing.Point(137, 79);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 33);
@@ -122,6 +158,38 @@ namespace Uçak_Bilet_Rezervazyon
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Adana",
+            "Adıyaman",
+            "Afyonkarahisar",
+            "Ağrı",
+            "Amasya",
+            "Ankara",
+            "Antalya",
+            "Balıkesir",
+            "Bayburt",
+            "Bursa",
+            "İzmir",
+            "İstanbul",
+            "Kocaeli",
+            "Van",
+            "Rize",
+            "Muş",
+            "Gaziantep",
+            "Hatay",
+            "Kahramanmaraş",
+            "Şanlıurfa",
+            "Adana",
+            "Konya",
+            "Malatya",
+            "Trabzon",
+            "Zonguldak",
+            "Isparta",
+            "Kütayha",
+            "Muğla",
+            "Denizli",
+            "Uşak",
+            "Çanakkale"});
             this.comboBox2.Location = new System.Drawing.Point(137, 129);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(200, 33);
@@ -148,9 +216,11 @@ namespace Uçak_Bilet_Rezervazyon
             // maskedTextBox1
             // 
             this.maskedTextBox1.Location = new System.Drawing.Point(137, 227);
+            this.maskedTextBox1.Mask = "00:00";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(200, 33);
             this.maskedTextBox1.TabIndex = 6;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             // 
             // dateTimePicker1
             // 
@@ -218,6 +288,7 @@ namespace Uçak_Bilet_Rezervazyon
             this.button1.TabIndex = 6;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -225,17 +296,18 @@ namespace Uçak_Bilet_Rezervazyon
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(768, 120);
+            this.panel1.Size = new System.Drawing.Size(781, 120);
             this.panel1.TabIndex = 2;
             // 
             // listBox1
             // 
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.HorizontalScrollbar = true;
             this.listBox1.ItemHeight = 25;
             this.listBox1.Location = new System.Drawing.Point(1, 395);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(768, 100);
+            this.listBox1.Size = new System.Drawing.Size(781, 100);
             this.listBox1.TabIndex = 3;
             // 
             // label8
@@ -253,16 +325,38 @@ namespace Uçak_Bilet_Rezervazyon
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(451, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(317, 117);
+            this.pictureBox1.Size = new System.Drawing.Size(330, 120);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button2.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Location = new System.Drawing.Point(343, 107);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(43, 33);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "↔";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(354, 189);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(0, 25);
+            this.label9.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 500);
+            this.ClientSize = new System.Drawing.Size(785, 500);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -270,6 +364,7 @@ namespace Uçak_Bilet_Rezervazyon
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -305,6 +400,8 @@ namespace Uçak_Bilet_Rezervazyon
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label9;
     }
 }
 
