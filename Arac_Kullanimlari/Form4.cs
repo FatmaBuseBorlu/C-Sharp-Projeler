@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace Arac_Kullanimlari
 {
-    public partial class Form1 : Form
+    public partial class Form4 : Form
     {
-        public Form1()
+        public Form4()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Merhaba Dünya");
+            // textBox1.Text = "Yazılım Mühendisliği";
+
+            label1.Text = textBox1.Text;
         }
     }
 }

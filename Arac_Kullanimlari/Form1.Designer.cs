@@ -35,7 +35,7 @@ namespace Arac_Kullanimlari
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(140, 254);
+            this.button1.Location = new System.Drawing.Point(140, 149);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(226, 59);
             this.button1.TabIndex = 0;
@@ -48,10 +48,11 @@ namespace Arac_Kullanimlari
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
-            this.ClientSize = new System.Drawing.Size(520, 450);
+            this.ClientSize = new System.Drawing.Size(492, 281);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "İlk Kod";
             this.ResumeLayout(false);
 
         }
