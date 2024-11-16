@@ -16,5 +16,18 @@ namespace Uçak_Bilet_Rezervasyon
         {
             InitializeComponent();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add("Rota: " + comboBox1.Text + "-" + comboBox2.Text + " Tarih: " + dateTimePicker1.Text + " Saat: " + maskedTextBox1.Text + " Yolcu Bilgileri Ad: " + textBox1.Text + " TC: " + maskedTextBox2.Text + " Telefon: " + maskedTextBox3.Text);
+            MessageBox.Show("Yolcu Kaydı Yapıldı");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label9.Text = comboBox1.Text;
+            comboBox1.Text = comboBox2.Text;
+            comboBox2.Text = label9.Text;
+        }
     }
 }

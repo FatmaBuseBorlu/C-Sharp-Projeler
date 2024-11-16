@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1E1F3BA5-F719-4F8C-88A3-D53D482C57AD}</ProjectGuid>
+    <ProjectGuid>{E73BAA20-8563-490C-B232-823F4639974E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Uçak_Bilet_Rezervasyon</RootNamespace>
-    <AssemblyName>Uçak Bilet Rezervasyon</AssemblyName>
+    <RootNamespace>Uçak_Bilet_Rezervazyon</RootNamespace>
+    <AssemblyName>Uçak Bilet Rezervazyon</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
