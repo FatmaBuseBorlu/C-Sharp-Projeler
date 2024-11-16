@@ -29,5 +29,10 @@ namespace Uçak_Bilet_Rezervazyon
             comboBox1.Text = comboBox2.Text;
             comboBox2.Text = label9.Text;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
